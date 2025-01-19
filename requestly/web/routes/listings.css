@@ -1,0 +1,84 @@
+.titlelistings{
+  position: relative;
+  justify-content: left;
+}
+
+.listingbox{
+  display: flex;
+  border-radius: 20px;
+  width: 80vw;
+  height: 50vw;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.listingtopic{
+  width: 100vw;
+  background: #f7f7f7;
+  margin:1vw;
+  border-radius: 20px;
+  max-height: 20vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.imagebox{
+  position: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 10px;
+  width: 20vw;
+  height: 18vw;
+  background-color: #ededed;
+  border-radius: 25px;
+}
+
+.listingimage{
+  height:100%;
+  width:100%;
+  position: flex;
+  align-content: center;
+  margin: auto;
+  padding: 1vw;
+  border-radius: 20%;
+}
+
+.listingdata {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width:80%;
+}
+
+.listingdata hr {
+  width: 80%;
+}
+
+.listingcost{
+  display: flex;
+  margin-left: 8vw;
+}
+
+.listingdescription {
+  display: flex;
+  margin-left: 8vw;
+  text-align: left;
+  max-width: 75%;
+}
+
+.listingtitle {
+  font-size: 3vw;
+  display: flex;
+  margin-left: 8vw;
+}
+
+.butbox {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+}
+.applybut {
+  width:100px;
+  height: 35px;
+}

@@ -1,0 +1,106 @@
+.listing-form{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.listing-form label {
+  margin-bottom: 10px;
+  width: 50vw;
+  display:flex;
+  justify-content: center;
+  
+}
+
+.values {
+  width:50vw;
+  resize: none;
+}
+
+.submit {
+  width: 30vw;
+  margin: auto;
+}
+
+.sliderBox {
+    display: flex;
+    justify-content: center;
+    margin: 2vw;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30vw;
+    height: 5vw;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 3vw;
+    z-index: 0;
+}
+
+.sliderTxt,
+.sliderTxtAfter {
+    cursor: pointer;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 5vw;
+    width: 15vw;
+    background-color: gray;
+    transition: .4s;
+    border-radius: 3vw;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(-15vw);
+    -ms-transform: translateX(-15vw);
+    transform: translateX(-15vw);
+}
+
+.sliderTxt {
+    position: absolute;
+    z-index: 0;
+    color: gray;
+    top: 1.2vw;
+    left: 15vw;
+    font-size: 100px;
+}
+
+.sliderTxtAfter {
+    position: absolute;
+    z-index: 0;
+    top: 1.2vw;
+    left: 30vw;
+    font-size: 8vw;
+    color: white;
+}
+
+input:checked+.slider+.sliderTxt+.sliderTxtAfter {
+    color: gray;
+}
+
+input:checked+.slider+.sliderTxt {
+    color: white;
+
+
